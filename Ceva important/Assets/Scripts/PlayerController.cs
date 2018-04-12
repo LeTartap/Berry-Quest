@@ -10,10 +10,9 @@ public class PlayerController : MonoBehaviour
     public float gravityScale;
     public float verticalVelocity;
     private float jumpForce = 10.0F;
-    public GunController theGun;
-   // private Vector3 movement = Vector3.zero;
+    //private Vector3 movement = Vector3.zero;//tbd
 
-    //public Animator anim;
+    public Animator anim;
 
     void Start()
     {
@@ -48,17 +47,9 @@ public class PlayerController : MonoBehaviour
         transform.Translate(movement * speed * Time.deltaTime, Space.World);
         controller.Move(moveVector * Time.deltaTime);
         
-        //anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
-        //Fire the gun
-        if(Input.GetMouseButton(0))
-        {
-            theGun.isFiring = true;
-        }
-        if(Input.GetMouseButtonUp(0))
-        {
-            theGun.isFiring = false;
-        }
+        anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
 
+        anim.SetBool("isGrounded", (controller.isGrounded));
 
     }
 }
