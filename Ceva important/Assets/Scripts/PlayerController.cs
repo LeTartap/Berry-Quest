@@ -14,9 +14,22 @@ public class PlayerController : MonoBehaviour
 
     public Animator anim;
 
+    public GameObject bullet;
+
+
+    private Vector3 worldpos;
+    private float mouseX;
+    private float mouseY;
+    private float cameraDif;
+    public Camera camera;
+
+    public GameObject fpc;
+
     void Start()
     {
         //Cursor.visible = false;
+        camera.enabled = false;
+        cameraDif = camera.transform.position.y - fpc.transform.position.y;
     }
     void Update()
     {
@@ -34,8 +47,18 @@ public class PlayerController : MonoBehaviour
             verticalVelocity -= gravity * Time.deltaTime *gravityScale;
         }
 
+        mouseX = Input.mousePosition.x;
+
+        mouseY = Input.mousePosition.y;
+
+        worldpos = camera.ScreenToWorldPoint(new Vector3(mouseX, mouseY, cameraDif));
+
+        Vector3 turretLookDirection = new Vector3(worldpos.x, fpc.transform.position.y, worldpos.z);
+
+        fpc.transform.LookAt(turretLookDirection);
+
         //Movement
-        
+
         Vector3 moveVector = new Vector3(0, verticalVelocity, 0);
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
         float moveVertical = Input.GetAxisRaw("Vertical");
@@ -46,10 +69,20 @@ public class PlayerController : MonoBehaviour
                 
         transform.Translate(movement * speed * Time.deltaTime, Space.World);
         controller.Move(moveVector * Time.deltaTime);
+
         
+
+        // projectile
+        if (Input.GetButtonDown("Fire1"))
+        {
+            bullet.transform.position=Vector3.Lerp(bullet.transform.position, new Vector3())
+        }
+
+
+
         anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
 
         anim.SetBool("isGrounded", (controller.isGrounded));
-
+        
     }
 }
