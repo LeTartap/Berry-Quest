@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
     private float bulletTimeStamp;
+    public Animator anim;
     #endregion
     #region FaceFollowCursorDeclaration
     private Vector3 worldpos;
@@ -70,6 +71,10 @@ public class PlayerController : MonoBehaviour
                 bulletTimeStamp = Time.time + 0.5f;
             }
         #endregion
+
+        #region Animations
+        anim.SetBool("isGrounded", Input.GetKey(KeyCode.Space));
+        #endregion
     }
     void Fire()
     {
@@ -83,6 +88,6 @@ public class PlayerController : MonoBehaviour
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * -10;
 
         // Destroy the bullet after 2 seconds
-        Destroy(bullet, 2.0f);
+        Destroy(bullet, 3.0f);
     }
 }
