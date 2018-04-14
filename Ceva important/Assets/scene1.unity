@@ -506,7 +506,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 5dddd2555ce5d1a49bf4221dd9af0f37, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 5dddd2555ce5d1a49bf4221dd9af0f37, type: 3}
       propertyPath: m_Controller
@@ -1216,11 +1216,6 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 100052, guid: 5dddd2555ce5d1a49bf4221dd9af0f37, type: 3}
   m_PrefabInternal: {fileID: 436787840}
---- !u!95 &1940354398 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 5dddd2555ce5d1a49bf4221dd9af0f37,
-    type: 3}
-  m_PrefabInternal: {fileID: 436787840}
 --- !u!1 &2106603796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,10 +1337,6 @@ MonoBehaviour:
   gravity: 15
   gravityScale: 3
   verticalVelocity: 15
-  anim: {fileID: 1940354398}
-  bullet: {fileID: 0}
-  camera: {fileID: 0}
-  fpc: {fileID: 0}
 --- !u!114 &2106603803
 MonoBehaviour:
   m_ObjectHideFlags: 0

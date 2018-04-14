@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ceva important", "Assembly-CSharp.csproj", "{3AF99545-2D70-8E79-8EC2-9ABB12DE06EA}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ceva important", "Ceva important.csproj", "{695978B8-8B55-DB39-2D05-0D1DD574F615}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3AF99545-2D70-8E79-8EC2-9ABB12DE06EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3AF99545-2D70-8E79-8EC2-9ABB12DE06EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3AF99545-2D70-8E79-8EC2-9ABB12DE06EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3AF99545-2D70-8E79-8EC2-9ABB12DE06EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{695978B8-8B55-DB39-2D05-0D1DD574F615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{695978B8-8B55-DB39-2D05-0D1DD574F615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{695978B8-8B55-DB39-2D05-0D1DD574F615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{695978B8-8B55-DB39-2D05-0D1DD574F615}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

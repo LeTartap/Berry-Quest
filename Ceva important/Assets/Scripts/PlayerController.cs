@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-    public Animator anim;
+    //public Animator anim;
 
     void Start()
     {
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(movement * speed * Time.deltaTime, Space.World);
         controller.Move(moveVector * Time.deltaTime);
 
-        anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
+        //anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
 
 
 
