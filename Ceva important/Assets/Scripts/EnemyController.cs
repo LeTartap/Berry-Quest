@@ -14,9 +14,15 @@ public class EnemyController : MonoBehaviour {
         myRB = GetComponent<Rigidbody>();
         thePlayer = FindObjectOfType<PlayerController>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+
+    void FixedUpdate()
+    {
+    myRB.velocity = (transform.forward*movespeed);    
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
         transform.LookAt(thePlayer.transform.position);	
 	}
