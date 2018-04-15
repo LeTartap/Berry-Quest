@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         myRigidbody.velocity = moveVelocity;
     }
+    
     void Fire()
     {
         //Create the Bullet from the Bullet Prefab
@@ -67,8 +68,9 @@ public class PlayerController : MonoBehaviour
 
         // Add velocity to the bullet
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * -10;
-
+        
         // Destroy the bullet after 3 seconds
         Destroy(bullet, 3.0f);
     }
+    
 }
