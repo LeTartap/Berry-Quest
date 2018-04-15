@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 645
-  m_MinSize: {x: 915, y: 442}
-  m_MaxSize: {x: 22010, y: 10021}
+  m_MinSize: {x: 909, y: 442}
+  m_MaxSize: {x: 22004, y: 10000}
   vertical: 0
-  controlID: 14132
+  controlID: 810
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 14133
+  controlID: 787
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -182,14 +182,14 @@ MonoBehaviour:
     height: 290
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 7862.3333494772105
+  lastFramingTime: 178.7590555125943
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.3279194, y: 0.25602898, z: -0.11730327}
+    m_Target: {x: 0.07999551, y: 3.0134993, z: 2.5213823}
     speed: 2
-    m_Value: {x: 1.3279194, y: 0.25602898, z: -0.11730327}
+    m_Value: {x: 0.07999551, y: 3.0134993, z: 2.5213823}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -213,13 +213,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.5644099, y: 0.05952562, z: -0.04085641, w: -0.8223314}
+    m_Target: {x: -0.116688386, y: 0.030049384, z: -0.0035327594, w: -0.9927076}
     speed: 2
-    m_Value: {x: -0.5644099, y: 0.05952562, z: -0.04085641, w: -0.8223315}
+    m_Value: {x: -0.116688386, y: 0.030049384, z: -0.0035327594, w: -0.9927076}
   m_Size:
-    m_Target: 0.34523445
+    m_Target: 9.17248
     speed: 2
-    m_Value: 0.34523445
+    m_Value: 9.17248
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -279,12 +279,8 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: a926e62318acfe640be6a04187c9f7ab,
-    type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: 1107121030231443974, guid: a926e62318acfe640be6a04187c9f7ab,
-      type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
+  m_AnimatorController: {fileID: 0}
+  m_BreadCrumbs: []
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
   blendTreeGraph: {fileID: 0}
@@ -340,8 +336,8 @@ MonoBehaviour:
     y: 311
     width: 587
     height: 334
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -431,9 +427,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 50b8fcff
-    m_LastClickedID: 0
-    m_ExpandedIDs: 2efbffff30fbffff40fbffff44fbffff4afbffff4efbffff54fbffff58fbffff68fbffff6cfbffff74fbffff78fbffff7cfbffff84fbffff88fbffff8cfbffff90fbffff94fbffff9afbffff9cfbffff9efbffff00000000ee290000
+    m_SelectedIDs: 002a0000
+    m_LastClickedID: 10752
+    m_ExpandedIDs: 98fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -520,19 +516,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Obiecte
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Obiecte
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: F:\Programe\Unity\Mr-Bonesacks-s-test-world\Ceva important
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ae270000
-    m_LastClickedID: 10158
-    m_ExpandedIDs: 0000000088270000ae2700006a28000000ca9a3bffffff7f
+    m_SelectedIDs: 30290000
+    m_LastClickedID: 10544
+    m_ExpandedIDs: 00000000b42700009628000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -560,7 +556,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000088270000ae2700006a28000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000b42700009628000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -585,8 +581,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 50b8fcff
-    m_LastClickedInstanceID: -214960
+    m_SelectedInstanceIDs: 002a0000
+    m_LastClickedInstanceID: 10752
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 1a2e0000c027000070280000c0290000f0280000a4270000ee290000202a0000b827000098270000fa270000
     m_RenameOverlay:
