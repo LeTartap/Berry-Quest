@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public Transform bulletSpawn;
     private float bulletTimeStamp;
     public Animator anim;
+    public Animation animation;
     #endregion
 
 
@@ -23,21 +24,8 @@ public class PlayerController : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody>();
         mainCamera = FindObjectOfType<Camera>();
     }
-    void Update()
+    void LateUpdate()
     {
-        #region Jumping
-        //if (controller.isGrounded)
-        //{
-        //    verticalVelocity = -gravity * Time.deltaTime;
-        //    if (Input.GetKeyDown(KeyCode.Space))
-        //        verticalVelocity = jumpForce;
-        //}
-        //else
-        //{
-        //    verticalVelocity -= gravity * Time.deltaTime;
-        //}
-        #endregion
-
         #region Movement + FaceFollowCursor
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput * moveSpeed;
@@ -51,7 +39,7 @@ public class PlayerController : MonoBehaviour
             transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
         }
         #endregion
-        
+
         #region Bullet
         if (bulletTimeStamp <= Time.time)
             if (Input.GetButtonDown("Fire1"))
@@ -62,7 +50,7 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region Animations
-        //anim.SetBool("isGrounded", myRigidbody.isGrounded && Input.GetKey(KeyCode.Space));
+
         #endregion
     }
     void FixedUpdate()
@@ -80,7 +68,7 @@ public class PlayerController : MonoBehaviour
         // Add velocity to the bullet
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * -10;
 
-        // Destroy the bullet after 2 seconds
+        // Destroy the bullet after 3 seconds
         Destroy(bullet, 3.0f);
     }
 }
