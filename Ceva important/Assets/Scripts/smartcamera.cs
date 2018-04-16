@@ -6,27 +6,58 @@ public class smartcamera : MonoBehaviour {
 
     float height;
     public float speed;
-    public bool coliding = false;
+    public float maxrise;
+    public bool colliding = false;
+    public Rigidbody rb;
+    bool added;
 
 	// Use this for initialization
 	void Start ()
     {
-        height = transform.position.y;	
-	}
+        rb = GetComponent<Rigidbody>();
+        height = transform.position.y;
+        maxrise += height;
+    }
 	
 	// Update is called once per frame
-	void Update ()
+	void FixedUpdate ()
     {
-		
-	}
+           
 
-  
-    private void OnTriggerEnter ()
+        if(transform.position.y<height)
+        {
+            Vector3 a = transform.position;
+            a.y = height;
+            transform.position = a;
+        }
+        else
+        {
+            rb.AddForce(0, -speed * Time.deltaTime, 0); 
+        }
+
+        if (transform.position.y > maxrise)
+        {
+            Vector3 a = transform.position;
+            a.y = maxrise;
+            transform.position = a;
+        }
+
+
+
+    }
+
+
+    private void OnTriggerStay()
     {
-        coliding = true;
-        Vector3 vect= transform.position;
-        vect.y += speed * Time.deltaTime;
-        transform.position = vect;
+        //if (added)
+       // {
+            rb.AddForce(0, 2 * speed * Time.deltaTime, 0);
+        Debug.Log("lol");
+        //}
+
+        // Vector3 vect= transform.position;
+        // vect.y += speed * Time.deltaTime;
+        // transform.SetPositionAndRotation(vect, transform.rotation);
     }
 
 }
