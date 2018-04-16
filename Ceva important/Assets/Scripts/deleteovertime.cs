@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class deleteovertime : MonoBehaviour 
+public class DeleteOverTime : MonoBehaviour 
 {
 
 	public float time;

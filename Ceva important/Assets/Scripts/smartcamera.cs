@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class smartcamera : MonoBehaviour {
+public class SmartCamera : MonoBehaviour {
 
     float height;
     public float speed;

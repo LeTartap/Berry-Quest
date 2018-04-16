@@ -218,25 +218,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &391625740
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 391625738}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: b7da58d12e86c90499b7a5ef0036f03d, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: b7da58d12e86c90499b7a5ef0036f03d, type: 2}
-  - {fileID: 7400000, guid: ea4a2fe7538ccce4bb690fca8703a575, type: 2}
-  - {fileID: 7400000, guid: 4e975564551980b47ad67817313e1d3c, type: 2}
-  - {fileID: 7400000, guid: d396ef87e4121d14da719e02e3bd7157, type: 2}
-  - {fileID: 7400000, guid: add1ca64727ab7e41839666be0f5f56c, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &469382290
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,19 +778,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0b7cedf15f9cd7418d76b892be206d7, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.6593085
+      value: -0.6001338
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0b7cedf15f9cd7418d76b892be206d7, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.62592745
+      value: 0.6888341
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0b7cedf15f9cd7418d76b892be206d7, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.019524131
+      value: -0.04142023
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0b7cedf15f9cd7418d76b892be206d7, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.41610807
+      value: -0.4045138
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0b7cedf15f9cd7418d76b892be206d7, type: 3}
       propertyPath: m_RootOrder
@@ -829,11 +810,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0b7cedf15f9cd7418d76b892be206d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 34.969
+      value: 32.86
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0b7cedf15f9cd7418d76b892be206d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -80.882
+      value: -70.8
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: b0b7cedf15f9cd7418d76b892be206d7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1307,9 +1288,9 @@ GameObject:
   - component: {fileID: 2106603800}
   - component: {fileID: 2106603799}
   - component: {fileID: 2106603797}
-  - component: {fileID: 2106603801}
   - component: {fileID: 2106603803}
   - component: {fileID: 2106603802}
+  - component: {fileID: 2106603801}
   - component: {fileID: 2106603798}
   m_Layer: 0
   m_Name: Player
@@ -1367,11 +1348,7 @@ MonoBehaviour:
   gravity: 20
   jumpForce: 5
   moveSpeed: 6
-  bulletPrefab: {fileID: 1936986056803044, guid: aa11fcb948a3ee548aae1c737b0ed1d4,
-    type: 2}
-  bulletSpawn: {fileID: 469382291}
   anim: {fileID: 0}
-  animation: {fileID: 391625740}
 --- !u!33 &2106603799
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1393,23 +1370,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!143 &2106603801
-CharacterController:
+--- !u!114 &2106603801
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2106603796}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Height: 1.75
-  m_Radius: 0.42
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.1
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24270782367396540ad90904029133a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1936986056803044, guid: aa11fcb948a3ee548aae1c737b0ed1d4,
+    type: 2}
+  bulletSpawn: {fileID: 469382291}
 --- !u!54 &2106603802
 Rigidbody:
   m_ObjectHideFlags: 0

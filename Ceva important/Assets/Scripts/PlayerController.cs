@@ -11,11 +11,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveInput;
     private Vector3 moveVelocity;
     private Camera mainCamera;
-    public GameObject bulletPrefab;
-    public Transform bulletSpawn;
-    private float bulletTimeStamp;
     public Animator anim;
-    public Animation animation;
     #endregion
 
 
@@ -40,15 +36,6 @@ public class PlayerController : MonoBehaviour
         }
         #endregion
 
-        #region Bullet
-        if (bulletTimeStamp <= Time.time)
-            if (Input.GetButtonDown("Fire1"))
-            {
-                Fire();
-                bulletTimeStamp = Time.time + 0.5f;
-            }
-        #endregion
-
         #region Animations
 
         #endregion
@@ -58,19 +45,6 @@ public class PlayerController : MonoBehaviour
         myRigidbody.velocity = moveVelocity;
     }
     
-    void Fire()
-    {
-        //Create the Bullet from the Bullet Prefab
-       var bullet = (GameObject)Instantiate(
-           bulletPrefab,
-           bulletSpawn.position,
-           bulletSpawn.rotation);
-
-        // Add velocity to the bullet
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * -10;
-        
-        // Destroy the bullet after 3 seconds
-        Destroy(bullet, 3.0f);
-    }
+    
     
 }
