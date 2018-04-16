@@ -1348,7 +1348,7 @@ MonoBehaviour:
   gravity: 20
   jumpForce: 5
   moveSpeed: 6
-  anim: {fileID: 0}
+  anim: {fileID: 391625739}
 --- !u!33 &2106603799
 MeshFilter:
   m_ObjectHideFlags: 0
