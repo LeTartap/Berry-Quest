@@ -18,9 +18,7 @@ public class EnemyController : MonoBehaviour {
 
     void FixedUpdate()
     {
-<<<<<<< HEAD
         myRB.velocity = (transform.forward*movespeed);    
-=======
         if(
             (Mathf.Sqrt(Mathf.Pow(transform.position.x-thePlayer.transform.position.x,2)
             +
@@ -28,7 +26,7 @@ public class EnemyController : MonoBehaviour {
                         ))>distance
           )
         {
-            myRB.velocity = (transform.forward*movespeed); ///nu folosi vector aici
+            transform.Translate(Vector3.forward * Time.deltaTime *movespeed);
         }
       
 
@@ -38,8 +36,6 @@ public class EnemyController : MonoBehaviour {
         q.x = 0;
         q.z = 0;
         transform.SetPositionAndRotation(transform.position, q);
-
->>>>>>> developer-Vlad
     }
 
     // Update is called once per frame
