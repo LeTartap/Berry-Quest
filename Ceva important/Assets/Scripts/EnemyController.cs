@@ -6,7 +6,7 @@ public class EnemyController : MonoBehaviour {
     private Rigidbody myRB;
     public float movespeed;
     public PlayerController thePlayer;
-
+    public float distance;//daca e mica inamicul intra de tot in player;
 
 	// Use this for initialization
 	void Start ()
@@ -18,12 +18,34 @@ public class EnemyController : MonoBehaviour {
 
     void FixedUpdate()
     {
+<<<<<<< HEAD
         myRB.velocity = (transform.forward*movespeed);    
+=======
+        if(
+            (Mathf.Sqrt(Mathf.Pow(transform.position.x-thePlayer.transform.position.x,2)
+            +
+            Mathf.Pow(transform.position.y - thePlayer.transform.position.y,2)
+                        ))>distance
+          )
+        {
+            myRB.velocity = (transform.forward*movespeed); ///nu folosi vector aici
+        }
+      
+
+        transform.LookAt(thePlayer.transform.position);
+        Quaternion q;
+        q = transform.rotation;
+        q.x = 0;
+        q.z = 0;
+        transform.SetPositionAndRotation(transform.position, q);
+
+>>>>>>> developer-Vlad
     }
 
     // Update is called once per frame
     void Update ()
     {
-        transform.LookAt(thePlayer.transform.position);	
+       
+        
 	}
 }
