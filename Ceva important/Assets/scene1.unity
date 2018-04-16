@@ -982,7 +982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2106603800}
-  offset: {x: 0, y: 5, z: -4}
+  offset: {x: 0, y: 7, z: -4}
 --- !u!1 &1653900058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movespeed: 2
   thePlayer: {fileID: 2106603798}
-  distance: 3
+  distance: 0
 --- !u!54 &2060979673
 Rigidbody:
   m_ObjectHideFlags: 0
