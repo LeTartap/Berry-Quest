@@ -860,7 +860,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4457745cc9bf5094aa153d8334f88d5d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 4457745cc9bf5094aa153d8334f88d5d, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -983,81 +983,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2106603800}
   offset: {x: 0, y: 7, z: -4}
-<<<<<<< HEAD
-=======
-=======
-  offset: {x: 0, y: 5, z: -4}
---- !u!114 &1412415349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412415342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4c497a1fccb33469cd195a5b5e0664, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 300
-  maxrise: 4
-  colliding: 0
-  rb: {fileID: 0}
---- !u!136 &1412415350
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412415342}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 1.75
-  m_Height: 3.48
-  m_Direction: 2
-  m_Center: {x: 0, y: 2.24, z: 4.85}
---- !u!54 &1412415351
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412415342}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!136 &1412415352
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412415342}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 2
-  m_Height: 4.5
-  m_Direction: 1
-  m_Center: {x: 0, y: -4.48, z: -2.4}
---- !u!136 &1412415353
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1412415342}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 2
-  m_Height: 6.17
-  m_Direction: 2
-  m_Center: {x: 0, y: -1.8, z: 0}
->>>>>>> developer-Vlad
->>>>>>> parent of 0a4534b... Revert "Merge branch 'developer-Vlad' Mure"
 --- !u!1 &1653900058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,7 +1046,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 65.925, y: -85.066, z: -39.333}
 --- !u!1 &1673155291 stripped
 GameObject:
@@ -1141,64 +1066,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 4457745cc9bf5094aa153d8334f88d5d, type: 3}
---- !u!1001 &1679969734
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.627
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b8ace0366edb89d468e468188d2b5e04, type: 2}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.04
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 7e21887ea9646c444b70f737c7cb32a3, type: 3}
-  m_IsPrefabParent: 0
 --- !u!1 &1717057896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,38 +1236,7 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 1783589956383994, guid: c39a4141c5da76b438ffc15ce56f810b,
     type: 2}
-<<<<<<< HEAD
   m_PrefabInternal: {fileID: 1732511967}
-=======
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2060979671}
-  - component: {fileID: 2060979673}
-  - component: {fileID: 2060979674}
-  - component: {fileID: 2060979672}
-  m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2060979671
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 4306311333332478, guid: c39a4141c5da76b438ffc15ce56f810b,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2060979670}
-  m_LocalRotation: {x: 0, y: 0.86602545, z: 0, w: 0.49999994}
-  m_LocalPosition: {x: 0.575, y: -0.853, z: 4.45}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 120, z: 0}
->>>>>>> parent of 0a4534b... Revert "Merge branch 'developer-Vlad' Mure"
 --- !u!114 &2060979672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,7 +1368,7 @@ Transform:
   m_Children:
   - {fileID: 796897776}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2106603801
 MonoBehaviour:
