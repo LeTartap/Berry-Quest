@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         #region Movement + FaceFollowCursor
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
+        moveInput.Normalize();
         moveVelocity = moveInput * moveSpeed;
         Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
