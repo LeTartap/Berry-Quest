@@ -31,7 +31,7 @@ public class smartcamera : MonoBehaviour {
             transform.position = a;
         }
         else
-        {
+        {   
             rb.AddForce(0, -speed * Time.deltaTime, 0); 
         }
 

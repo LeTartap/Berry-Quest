@@ -908,6 +908,8 @@ GameObject:
   - component: {fileID: 1412415349}
   - component: {fileID: 1412415351}
   - component: {fileID: 1412415350}
+  - component: {fileID: 1412415352}
+  - component: {fileID: 1412415353}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -985,13 +987,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1412415342}
-  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalRotation: {x: 0.4225902, y: 0.0048701265, z: 0.01044402, w: 0.9062476}
   m_LocalPosition: {x: 0, y: 7, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 49.982002, y: 1.5730001, z: 2.0540001}
 --- !u!114 &1412415348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,7 +1018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4c497a1fccb33469cd195a5b5e0664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 300
   maxrise: 4
   colliding: 0
   rb: {fileID: 0}
@@ -1029,10 +1031,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 2.13
-  m_Height: 8.99
+  m_Radius: 2
+  m_Height: 4.07
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 2.9}
+  m_Center: {x: 0, y: 2.24, z: 4.85}
 --- !u!54 &1412415351
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1048,6 +1050,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &1412415352
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412415342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 4.5
+  m_Direction: 1
+  m_Center: {x: 0, y: -4.48, z: -2.4}
+--- !u!136 &1412415353
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1412415342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2
+  m_Height: 6.17
+  m_Direction: 2
+  m_Center: {x: 0, y: -1.8, z: 0}
 --- !u!1 &1653900058
 GameObject:
   m_ObjectHideFlags: 0
