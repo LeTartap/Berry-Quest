@@ -7,11 +7,11 @@ public class mure : MonoBehaviour {
     public murecounter script;
     public GameObject tufanud;
 
-    bool destroyed = false;
+    public bool destroyed = false;
 
 	// Use this for initialization
 	void Start () {
-		
+      //  tufanud = GetComponent<tufe_nud>();
 	}
 	
 	// Update is called once per frame
