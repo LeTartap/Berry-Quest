@@ -7,7 +7,8 @@ public class Bullet : MonoBehaviour {
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
     private float bulletTimeStamp;
-
+    public float bulletSpeed;
+    public float rateOfFire;
     // Use this for initialization
     void Start () {
 		
@@ -20,7 +21,7 @@ public class Bullet : MonoBehaviour {
             if (Input.GetButtonDown("Fire1"))
             {
                 Fire();
-                bulletTimeStamp = Time.time + 0.5f;
+                bulletTimeStamp = Time.time + rateOfFire;
             }
         #endregion 
     }
@@ -33,10 +34,11 @@ public class Bullet : MonoBehaviour {
             bulletSpawn.rotation);
 
         // Add velocity to the bullet
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * -10;
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * -bulletSpeed;
 
 
         // Destroy the bullet after 3 seconds
-        Destroy(bullet, 3.0f);
+        Destroy(bullet, 5.0f);
     }
+    
 }

@@ -96,4 +96,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mintime: 5
   maxtime: 10
-  tufa: {fileID: 1832420901348114, guid: 390cc7b54dc09dd4d8bc6eb6003e6d02, type: 2}
+  tufa: {fileID: 1714099006232098, guid: ea0a223cb55b8884caafb1754f70fdbd, type: 2}
