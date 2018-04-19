@@ -5,7 +5,7 @@ using UnityEngine;
 public class HurtPlayer : MonoBehaviour {
     public int damageToGive;
     // Use this for initialization
-    public void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag == "Player")
         {

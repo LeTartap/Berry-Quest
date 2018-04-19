@@ -8,12 +8,12 @@ public class growmure : MonoBehaviour {
     public float maxtime = 0;
     public GameObject tufa;
     float time;
-    bool destroyed = false;
+    bool tufanuddestroyed = false;
 
 	// Use this for initialization
 	void Start ()
     {
-        time = Random.RandomRange(mintime, maxtime);
+        time = Random.Range(mintime, maxtime);
         time += Time.time;
     }
 	
@@ -24,13 +24,13 @@ public class growmure : MonoBehaviour {
         if (Time.time > time)
         {
 
-            if (!destroyed)
+            if (!tufanuddestroyed)
             {
                 Instantiate(tufa,transform.position,transform.rotation);
 
                 Destroy(this.gameObject);
             }
-            destroyed = true;
+            tufanuddestroyed = true;
         }
 
         

@@ -7,17 +7,16 @@ public class mure : MonoBehaviour {
     public murecounter script;
     public GameObject tufanud;
 
+
     public bool destroyed = false;
 
 	// Use this for initialization
 	void Start () {
-      //  tufanud = GetComponent<tufe_nud>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+    }
 
 
     private void OnTriggerEnter(Collider other)
@@ -25,11 +24,12 @@ public class mure : MonoBehaviour {
        if(!destroyed)
         if (other.name == "Player")
         {
-            script = other.GetComponent<murecounter>();
-            script.countmure++;
+                script = other.GetComponent<murecounter>();
+                script.countmure++;
                 destroyed = true;
-                Instantiate(tufanud,transform.position,transform.rotation);
+                Instantiate(tufanud, transform.position, transform.rotation);
                 Destroy(this.gameObject);
+
         }
 
     }
