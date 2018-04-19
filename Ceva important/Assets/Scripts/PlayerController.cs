@@ -10,14 +10,14 @@ public class PlayerController : MonoBehaviour
     private Rigidbody myRigidbody;
     private Vector3 moveInput;
     private Vector3 moveVelocity;
-    private Camera mainCamera;
+    public Camera camera;
     public Animator anim;
     #endregion
 
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody>();
-        mainCamera = FindObjectOfType<Camera>();
+        camera.enabled = false;
     }
     void LateUpdate()
     {
@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical"));
         moveInput.Normalize();
         moveVelocity = moveInput * moveSpeed;
-        Ray cameraRay = mainCamera.ScreenPointToRay(Input.mousePosition);
+        Ray cameraRay = camera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
         float rayLength;
         if (groundPlane.Raycast(cameraRay, out rayLength))
