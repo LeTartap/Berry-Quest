@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mintime: 1
   maxtime: 5
-  tufa: {fileID: 0}
+  tufa: {fileID: 1714099006232098}
 --- !u!198 &198752596393414854
 ParticleSystem:
   m_ObjectHideFlags: 1
