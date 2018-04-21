@@ -34,6 +34,9 @@ MonoBehaviour:
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
   controlID: 4725
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 --- !u!114 &2
 MonoBehaviour:
@@ -59,9 +62,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 763
     width: 1058
     height: 615
+=======
+    y: 386
+    width: 614
+    height: 330
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 =======
     y: 386
     width: 614
@@ -77,15 +86,21 @@ MonoBehaviour:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -529
     m_HBaseRangeMax: 529
     m_VBaseRangeMin: -299
     m_VBaseRangeMax: 299
 =======
+=======
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     m_HBaseRangeMin: -250.40001
     m_HBaseRangeMax: 250.40001
     m_VBaseRangeMin: -156.5
     m_VBaseRangeMax: 156.5
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
@@ -104,15 +119,21 @@ MonoBehaviour:
       x: 0
       y: 17
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 1058
       height: 598
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 529, y: 299}
 =======
+=======
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
       width: 614
       height: 313
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 307, y: 156.5}
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -121,22 +142,32 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
       x: -529
       y: -299
       width: 1058
       height: 598
 =======
+=======
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
       x: -307
       y: -156.5
       width: 614
       height: 313
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1058, y: 615}
+=======
+  m_LastWindowPixelSize: {x: 614, y: 330}
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 =======
   m_LastWindowPixelSize: {x: 614, y: 330}
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
@@ -162,12 +193,21 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1060
     height: 1307
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
   controlID: 55
+=======
+    width: 616
+    height: 645
+  m_MinSize: {x: 202, y: 442}
+  m_MaxSize: {x: 4002, y: 8042}
+  vertical: 1
+  controlID: 4726
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 =======
     width: 616
     height: 645
@@ -193,8 +233,13 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1060
     height: 671
+=======
+    width: 616
+    height: 294
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 =======
     width: 616
     height: 294
@@ -232,8 +277,13 @@ MonoBehaviour:
     x: 0
     y: 92
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1058
     height: 650
+=======
+    width: 614
+    height: 273
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 =======
     width: 614
     height: 273
@@ -316,6 +366,7 @@ MonoBehaviour:
     width: 1152
     height: 575
   m_PersistentViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
@@ -410,6 +461,8 @@ MonoBehaviour:
   m_ShowBusConnections: 0
   m_ShowBusConnectionsOfSelection: 0
 =======
+=======
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: 1107121030231443974, guid: a926e62318acfe640be6a04187c9f7ab, type: 2}
@@ -443,6 +496,9 @@ MonoBehaviour:
   m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 --- !u!114 &7
 MonoBehaviour:
@@ -460,9 +516,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 671
     width: 1060
     height: 636
+=======
+    y: 294
+    width: 616
+    height: 351
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 =======
     y: 294
     width: 616
@@ -520,6 +582,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1060
     y: 0
     width: 394
@@ -530,11 +593,18 @@ MonoBehaviour:
 =======
     x: 616
     y: 0
+=======
+    x: 616
+    y: 0
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     width: 239
     height: 645
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 10}
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
   m_Panes:
   - {fileID: 10}
@@ -563,6 +633,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1062
     y: 92
     width: 390
@@ -574,6 +645,8 @@ MonoBehaviour:
     m_LastClickedID: 0
     m_ExpandedIDs: 4ce2ffff00000000
 =======
+=======
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     x: 618
     y: 92
     width: 235
@@ -584,6 +657,9 @@ MonoBehaviour:
     m_SelectedIDs: e62e0000
     m_LastClickedID: 12006
     m_ExpandedIDs: 3af3ffff3cf3ffff3ef3ffff44f3ffff54f3ffff60f3ffff64f3ffff66f3ffff68f3ffff9ef3ffff00000000c42e0000
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -604,7 +680,11 @@ MonoBehaviour:
     m_SearchString: 
   m_ExpandedScenes:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Menu
+=======
+  - scene2
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 =======
   - scene2
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
@@ -626,6 +706,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1454
     y: 0
     width: 534
@@ -636,11 +717,18 @@ MonoBehaviour:
 =======
     x: 855
     y: 0
+=======
+    x: 855
+    y: 0
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     width: 234
     height: 645
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
   m_ActualView: {fileID: 12}
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
   m_Panes:
   - {fileID: 12}
@@ -669,6 +757,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1456
     y: 92
     width: 530
@@ -676,6 +765,10 @@ MonoBehaviour:
 =======
     x: 857
     y: 92
+=======
+    x: 857
+    y: 92
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     width: 230
     height: 624
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
@@ -704,9 +797,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 6c330000
     m_LastClickedID: 13164
     m_ExpandedIDs: 000000006c3300006c370000883a000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 062e0000
+    m_LastClickedID: 11782
+    m_ExpandedIDs: 00000000362c00007c2e000000ca9a3bffffff7f
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 =======
     m_SelectedIDs: 062e0000
     m_LastClickedID: 11782
@@ -740,7 +839,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000006c3300006c370000883a0000
+=======
+    m_ExpandedIDs: 00000000362c00007c2e000000ca9a3bffffff7f
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
 =======
     m_ExpandedIDs: 00000000362c00007c2e000000ca9a3bffffff7f
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
@@ -769,15 +872,21 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
 =======
+=======
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     m_SelectedInstanceIDs: e62e0000
     m_LastClickedInstanceID: 12006
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 98e2fdffac11f5ff16e7ffffd46e0000ea6e0000
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -820,6 +929,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1988
     y: 0
     width: 572
@@ -830,11 +940,18 @@ MonoBehaviour:
 =======
     x: 1089
     y: 0
+=======
+    x: 1089
+    y: 0
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     width: 277
     height: 645
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
+<<<<<<< HEAD
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
+=======
 >>>>>>> parent of a78338f... Added Start Menu + Settings Menu
   m_Panes:
   - {fileID: 14}
@@ -863,11 +980,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1990
     y: 92
     width: 570
     height: 1286
 =======
+=======
+>>>>>>> parent of a78338f... Added Start Menu + Settings Menu
     x: 1091
     y: 92
     width: 275
