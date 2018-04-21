@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class SmartCamera : MonoBehaviour {
 
-    float height;
+    //private float height;
     public float speed;
     public bool coliding = false;
 
 	// Use this for initialization
 	void Start ()
     {
-        height = transform.position.y;	
+        //height = transform.position.y;	
 	}
 	
 	// Update is called once per frame

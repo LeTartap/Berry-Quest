@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
             transform.LookAt(new Vector3(pointToLook.x, transform.position.y, pointToLook.z));
         }
         Quaternion rot = transform.rotation;
-        Vector3 v = rot.ToEulerAngles();
+        Vector3 v = rot.eulerAngles;
         UpdateAnimation(moveInput, v);
         #endregion
     }
