@@ -1,25 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class PlayerHealthManager : MonoBehaviour {
+using UnityEngine.UI;
+public class PlayerHealthManager : MonoBehaviour
+{
     public int startingHealth;
     public int currentHealth;
 
-	// Use this for initialization
-	void Start () {
+    [Header("Unity Stuff")]
+    public Image healthbar;
+
+    // Use this for initialization
+    void Start () {
         currentHealth = startingHealth;
 	}
 	// Update is called once per frame
-	void Update () {
-        if (currentHealth <= 0)
-        {
-            gameObject.SetActive(false);
-        }
+	void Update ()
+    {
+
 
     }
     public void HurtPlayer(int damageAmount)
     {
         currentHealth -= damageAmount;
-        
+        healthbar.fillAmount = (float)currentHealth / (float)startingHealth;
+        if (currentHealth <= 0)
+        {
+            gameObject.SetActive(false);
+        }
+
     }
 }

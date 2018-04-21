@@ -635,9 +635,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: dda6d3c1-7f2b-4c4e-bd85-a6901219f8b2
-  projectName: Ceva important (2)
-  organizationId: unity_7l6xgedm_z3aaw
+  cloudProjectId: a259c894-6179-4a60-8855-0fa399aba09e
+  projectName: Ceva important (1) (1)
+  organizationId: letartap
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
