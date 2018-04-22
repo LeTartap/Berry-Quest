@@ -9,14 +9,13 @@ public class HUDCounter : MonoBehaviour {
     public murecounter mc;
     // Use this for initialization
     void Start () {
-        berryCountText.text = "Blueberries: " + mc.countmure.ToString();
-    
+        berryCountText.text = "Berries: " + mc.countmure.ToString();
     }
     
     // Update is called once per frame
     void Update ()
     {
-        berryCountText.text = "Blueberries: " + mc.countmure.ToString();
+        berryCountText.text = "Berries: " + mc.countmure.ToString();
         killCountText.text = "Kills: " + killcounter.killcount.ToString();
     }
 }
