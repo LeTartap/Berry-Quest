@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyHealthManager : MonoBehaviour {
     public int health;
     private int currentHealth;
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         currentHealth = health;
 		
 	}
@@ -16,6 +16,7 @@ public class EnemyHealthManager : MonoBehaviour {
 		if(currentHealth<=0)
         {
             Destroy(gameObject);
+            killcounter.killcount++;
         }
 	}
 public void HurtEnemy(int damage)
