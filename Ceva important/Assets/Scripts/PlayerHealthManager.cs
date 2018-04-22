@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 public class PlayerHealthManager : MonoBehaviour
 {
     public int startingHealth;
@@ -27,6 +29,8 @@ public class PlayerHealthManager : MonoBehaviour
         if (currentHealth <= 0)
         {
             gameObject.SetActive(false);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //restarts the scene if killed
+
         }
 
     }

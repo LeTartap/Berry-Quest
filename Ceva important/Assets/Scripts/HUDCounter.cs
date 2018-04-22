@@ -4,17 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HUDCounter : MonoBehaviour {
-    public Text countText;
+    public Text berryCountText;
+    public Text killCountText;
     public murecounter mc;
     // Use this for initialization
     void Start () {
-        countText.text = "Blueberries: " + mc.countmure.ToString();
+        berryCountText.text = "Blueberries: " + mc.countmure.ToString();
+    
     }
-
+    
     // Update is called once per frame
     void Update ()
     {
-        countText.text = "Blueberries: " + mc.countmure.ToString();
-
+        berryCountText.text = "Blueberries: " + mc.countmure.ToString();
+        killCountText.text = "Kills: " + killcounter.killcount.ToString();
     }
 }
