@@ -15,7 +15,7 @@ public class HUDCounter : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        berryCountText.text = "Berries: " + mc.countmure.ToString();
+        berryCountText.text =  mc.countmure.ToString();
         killCountText.text = "Kills: " + killcounter.killcount.ToString();
     }
 }
